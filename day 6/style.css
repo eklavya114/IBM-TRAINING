@@ -1,0 +1,63 @@
+#parent {
+    background-color: #2a2a2a; /* Dark background for a premium feel */
+    height: 500px;
+    border: none; /* Remove border for a cleaner look */
+    position: relative;
+    width: 80%;
+    margin: 0 auto; /* Center parent horizontally */
+    padding: 20px; /* Add some padding for better visuals */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a 3D effect */
+    border-radius: 10px; /* Rounded corners for smooth edges */
+}
+
+#child {
+    background-color: #121212; /* Deep black background for contrast */
+    height: 80px;
+    border: none; /* Remove border */
+    position: absolute;
+    top: 50px; /* Position it vertically within the parent */
+    width: 80%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center correction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; /* Smooth edges */
+    color: #ffffff; /* White text for readability */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+#grand-child {
+    background-color: #1db954; /* Spotify green for a vibrant touch */
+    height: 100px;
+    border: none; /* Remove border */
+    position: absolute;
+    top: 150px; /* Position it vertically within the parent */
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; /* Smooth edges */
+    color: #ffffff; /* White text for readability */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+#child > #chatbot {
+    background-color: #e50914; /* Netflix red for the chatbot */
+    height: 50px; /* Increase size for better visibility */
+    width: 50px; /* Match height */
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px; /* Position it at the bottom-right of the viewport */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    color: #ffffff; /* White text for readability */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
